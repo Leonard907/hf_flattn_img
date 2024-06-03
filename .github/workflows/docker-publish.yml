@@ -31,4 +31,4 @@ jobs:
         with:
           context: "{{defaultContext}}:code/docker"
           push: true
-          tags: hf-flattn-v1.0
+          tags: oulitu1/hf-flattn:v1.0
