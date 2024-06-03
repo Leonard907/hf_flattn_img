@@ -1,6 +1,8 @@
 FROM nvcr.io/nvidia/rapidsai/base:23.12-cuda12.0-py3.10
 # USER root
-RUN sudo apt-get update && sudo apt-get install -y git
+RUN apt-get update && \
+    apt-get upgrade -y && \
+    apt-get install -y git
 # Copy the requirements file
 COPY requirements.txt /tmp/requirements.txt
 # Install PyTorch and dependencies
