@@ -1,0 +1,15 @@
+accelerate
+datasets
+sentencepiece
+protobuf
+rouge-score
+nltk
+py7zr
+evaluate
+transformers
+tensor_parallel
+rank_bm25
+packaging
+ninja
+openai
+flash-attn
