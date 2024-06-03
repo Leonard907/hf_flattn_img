@@ -9,3 +9,4 @@ RUN pip install torch torchvision torchaudio
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 # Clean up
 RUN rm /tmp/requirements.txt
+RUN echo "complete"
