@@ -7,5 +7,7 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install torch torchvision torchaudio
 # Install packages from requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
+# Install vllm
+RUN pip install vllm
 # Clean up
 RUN rm /tmp/requirements.txt
