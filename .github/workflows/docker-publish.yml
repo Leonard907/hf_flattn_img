@@ -13,6 +13,8 @@ jobs:
           sudo rm -rf /opt/hostedtoolcache
           sudo rm -rf /usr/share/dotnet/
           sudo rm -rf "$AGENT_TOOLSDIRECTORY"
+          cd /opt
+          find . -maxdepth 1 -mindepth 1 '!' -path ./containerd '!' -path ./actionarchivecache '!' -path ./runner '!' -path ./runner-cache -exec rm -rf '{}' ';'
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v3
@@ -31,4 +33,4 @@ jobs:
         with:
           context: "{{defaultContext}}:code/docker"
           push: true
-          tags: oulitu1/hf-flattn:v1.0
+          tags: oulitu1/hf-flattn:v1.1
