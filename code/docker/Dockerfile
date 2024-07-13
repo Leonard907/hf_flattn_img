@@ -12,7 +12,10 @@ RUN git clone https://github.com/yuh-zha/AlignScore.git
 RUN cd AlignScore && pip install .
 # Install packages from requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
+RUN python -m spacy download en_core_web_sm
+RUN python -c "import nltk; nltk.download('punkt')"
 RUN pip install -U transformers huggingface-hub
+RUN pip install -U vllm
 # Clean up
 RUN rm /tmp/requirements.txt
 RUN cd .. && rm -rf AlignScore

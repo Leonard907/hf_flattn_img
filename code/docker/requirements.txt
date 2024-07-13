@@ -1,4 +1,5 @@
 summac
+spacy
 accelerate
 datasets
 sentencepiece
