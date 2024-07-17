@@ -8,10 +8,11 @@ rouge-score
 nltk
 py7zr
 evaluate
-transformers
+transformers==4.42
+huggingface-hub==0.23
 tensor_parallel
 rank_bm25
 packaging
 ninja
 openai
-vllm
+vllm==0.5.1
