@@ -11,3 +11,4 @@ COPY requirements.txt /tmp/requirements.txt
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
 # Clean up
 RUN rm /tmp/requirements.txt
+RUN pip install -U vllm
