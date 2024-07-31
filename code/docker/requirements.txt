@@ -1,3 +1,4 @@
+vllm
 accelerate
 datasets
 sentencepiece
@@ -11,4 +12,3 @@ rank_bm25
 packaging
 ninja
 openai
-vllm
