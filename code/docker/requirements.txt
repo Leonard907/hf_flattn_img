@@ -11,3 +11,4 @@ rank_bm25
 packaging
 ninja
 openai
+together
