@@ -1,4 +1,4 @@
-FROM nvcr.io/nvidia/rapidsai/base:23.12-cuda12.0-py3.10
+FROM nvcr.io/nvidia/rapidsai/base:23.12-cuda12.0-py3.12
 USER root
 # Install commands
 RUN apt-get update && apt-get install -y git
